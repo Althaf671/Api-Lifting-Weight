@@ -4,6 +4,8 @@
 
 var builder = WebApplication.CreateBuilder(args);
 
+Console.WriteLine("An App made by a fucking loser");
+
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
