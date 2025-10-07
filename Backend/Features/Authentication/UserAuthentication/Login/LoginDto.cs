@@ -25,7 +25,7 @@ namespace Backend.Features.Authentication.UserAuthentication.Login
 
     public class LoginResponse
     {
-        // Response Id
+        // Response user Id
         public string Id { get; set; } = string.Empty;
 
         // Response Name
