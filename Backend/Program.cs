@@ -1,15 +1,24 @@
+
+
+using Backend.Domain.Data;
+using Microsoft.EntityFrameworkCore;
+
 /**
  * Program.cs
 */
-
 var builder = WebApplication.CreateBuilder(args);
 
-Console.WriteLine("An App made by a fucking loser");
+Console.WriteLine("Welcome Althaf");
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Database builder
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 
 var app = builder.Build();
 

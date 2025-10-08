@@ -6,7 +6,7 @@
 using System.ComponentModel.DataAnnotations;
 using Backend.Features.Authentication.Shared.Validators;
 
-namespace Backend.Features.Authentication.UserAuthentication.Login
+namespace Backend.Features.Authentication.UserAuthentication.LoginLogout
 {
     public class LoginRequest
     {
